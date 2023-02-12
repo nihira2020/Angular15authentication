@@ -7,7 +7,10 @@
       "email": "test@gmail.com",
       "gender": "male",
       "role": "admin",
-      "isactive": true
+      "isactive": true,
+      "address":{
+        "area":"chennai"
+      }
     },
     {
       "id": "testuser",
@@ -16,7 +19,10 @@
       "email": "test@in.com",
       "gender": "male",
       "role": "user",
-      "isactive": true
+      "isactive": true,
+      "address":{
+        "area":"chennai"
+      }
     },
     {
       "id": "Jhon1",
@@ -25,7 +31,10 @@
       "email": "te@in.com",
       "gender": "male",
       "role": "tech",
-      "isactive": true
+      "isactive": true,
+      "address":{
+        "area":"chennai"
+      }
     },
     {
       "id": "ntuser",
@@ -34,7 +43,10 @@
       "email": "te@in.com",
       "gender": "male",
       "role": "tech",
-      "isactive": true
+      "isactive": true,
+      "address":{
+        "area":"banglore"
+      }
     }
   ],
   "role": [
@@ -45,6 +57,75 @@
     {
       "code": "tech",
       "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit":false,
+      "haveadd":false,
+      "havedelete":false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":false
+    }
+    
+    
+  ],
+  "customer":[
+    {
+      "id":1,
+      "name":"rakhesh",
+      "Creditlimit":1000
+    },
+    {
+      "id":2,
+      "name":"rahul",
+      "Creditlimit":1000
+    },
+    {
+      "id":3,
+      "name":"ramesh",
+      "Creditlimit":1000
+    },
+    {
+      "id":4,
+      "name":"rahim",
+      "Creditlimit":1000
+    },
+    {
+      "id":5,
+      "name":"robert",
+      "Creditlimit":1000
     }
   ]
 }

@@ -13,6 +13,7 @@ import {MaterialModule} from 'src/material.module';
 import {HttpClientModule} from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
     LoginComponent,
     HomeComponent,
     UserComponent,
-    UpdatepopupComponent
+    UpdatepopupComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,

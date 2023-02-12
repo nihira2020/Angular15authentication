@@ -32,4 +32,10 @@ export class AuthService {
   getrole(){
     return sessionStorage.getItem('role')!=null?sessionStorage.getItem('role')?.toString():'';
   }
+  GetAllCustomer(){
+    return this.http.get('http://localhost:3000/customer');
+  }
+  Getaccessbyrole(role:any,menu:any){
+    return this.http.get('http://localhost:3000/roleaccess?role='+role+'&menu='+menu)
+  }
 }
